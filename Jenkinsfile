@@ -4,7 +4,7 @@ pipeline {
     stage ('Build') {
       steps {
         sh 'printenv'
-        sh 'docker build -t ecr-push-demo .'
+        
         }
     }
     stage ('Publish to ECR') {
